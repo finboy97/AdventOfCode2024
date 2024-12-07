@@ -29,8 +29,8 @@ def is_update_valid(rules_map, update):
 
 
 def part_1():
-    """6268 too high, 6000 too low, 6134 too low"""
-    with open("input.txt") as f:
+    """143"""
+    with open("input1.txt") as f:
         all_lines = f.readlines()
         rules = all_lines[0:all_lines.index("\n")]
         updates = all_lines[all_lines.index("\n")+1:]
@@ -72,6 +72,7 @@ def find_invalid_index(line, rules_map):
 
 
 def part_2(update, rules_map):
+    """123"""
     fixed = []
     for x in update:
         fixed.append(x)
